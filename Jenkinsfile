@@ -1,13 +1,6 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/joelee2468/my-django-project1.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 echo 'Building the project...'
