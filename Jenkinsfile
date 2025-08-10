@@ -1,26 +1,26 @@
 pipeline {
     agent any
 
+    stages {
         stage('Build') {
             steps {
                 echo 'Building the project...'
-                // Insert your build commands here
-                // For COBOL, call mainframe build jobs or compile scripts
+                // Add your build commands here
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                // Insert test commands here
+                // Add your test steps
             }
         }
 
         stage('Deploy') {
             steps {
-                echo 'Deploying...'
-                // Insert deploy commands here (e.g., triggering z/OS jobs)
+                echo 'Deploying the project...'
+                // Add your deploy logic
             }
         }
-   
+    }
 }
