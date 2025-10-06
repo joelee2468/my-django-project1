@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
-/** test **/
+/** test **/ 
 class BookmarkConfig(AppConfig):
     name = 'bookmark'
